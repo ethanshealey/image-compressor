@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wght,GRAD@8..144,-10..0,100..1000,-200..150&display=swap');
+
+$font: 'Roboto Flex', sans-serif;
+$text: #f0f0f0;
+
+* {
+    font-family: $font;
+}
+
+html, body {
+    background-color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: $text;
+    padding-left: 25px;
+    background-color: #141414;
+    h1 {
+        font-weight: 1000;
+    }
+    .header-sub {
+        font-weight: 100;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-left: .25px solid $text;
+        opacity: 50%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: $text;
+    padding: 25px;
+    background-color: #141414;
+    width: 45vw;
+    max-width: 750px;
+    justify-content: center;
+    border-radius: 10px;
+    min-height: 100px;
+    overflow: hidden;
+    .compress-btn {
+        margin-top: 0px;
+    }
+}
+
+.file-upload-list-item {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: .5px solid #424242;
+    margin-top: 10px;
+    justify-content: space-between;
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .file-thumb {
+            height: 75px;
+            border-radius: 2.5px;
+            padding: 8px;
+            padding-left: 12px;
+        }
+        .file-name {
+            font-size: 12px;
+        }
+        .file-size {
+            font-size: 11px;
+            opacity: 50%;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            svg {
+                margin-bottom: -1px;
+            }
+        }
+    }
+    .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 12px;
+        .delete {
+            cursor: pointer;
+            opacity: 50%;
+            transition: .2s;
+            &:hover {
+                opacity: 75%;
+            }
+        }
+    }
+}
+
+// ANTD OVERRIDES
+
+.ant-upload-list {
+    display: flex;
+    flex-direction: column;
+}
