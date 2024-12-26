@@ -1,5 +1,4 @@
 import { UploadFile } from 'antd'
-import React from 'react'
 import FileSizeHelper from '../helpers/FileSizeHelper'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaRegTrashCan } from "react-icons/fa6";

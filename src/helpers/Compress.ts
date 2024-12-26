@@ -1,4 +1,4 @@
-import {compress as compressImage, compressAccurately} from 'image-conversion';
+import { compress as compressImage } from 'image-conversion';
 
 export default class Compress {
     

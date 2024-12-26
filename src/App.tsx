@@ -4,7 +4,7 @@ import { Header } from './components/Header'
 import { Button, Slider, Upload, UploadFile } from 'antd'
 import { InboxOutlined } from '@ant-design/icons';
 import { UploadChangeParam } from 'antd/es/upload';
-import React, { cloneElement } from 'react';
+import React from 'react';
 import { FileListItem } from './components/FileListItem';
 import Compress from './helpers/Compress';
 import Downloader from './helpers/Downloader';
